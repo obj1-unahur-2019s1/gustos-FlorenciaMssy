@@ -64,6 +64,7 @@ object placa {
  object cajita { 
  	method color() {return  rojo}
  	method material() {return cobre}
- 	method peso(objeto) {return 400 + objeto.peso()}
+ 	method peso() {return 400}
+ 	method peso(objeto) {return self.peso() + objeto.peso()}
  }
 
